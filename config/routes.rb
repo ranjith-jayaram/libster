@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-	get '/auth/spotify/callback', to: 'users#spotify'
+	root 'users#index'
+	# get '/auth/spotify', to: 'google.com'
+	get '/auth/spotify/callback', to: 'users#read'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
