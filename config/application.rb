@@ -6,6 +6,8 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+RSpotify.authenticate("0342282a1eac4f538301ab9bb82d93c3", "1a247e018f444ef9a05f962b4178c7cc")
+
 module Libster
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
